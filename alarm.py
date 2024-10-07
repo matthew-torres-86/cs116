@@ -82,11 +82,9 @@ def packetcallback(packet):
       incident_num = incident_num + 1
 
   except Exception as e:
-    # Uncomment the below and comment out `pass` for debugging, find error(s)
     # print(e)
     pass
 
-# DO NOT MODIFY THE CODE BELOW
 parser = argparse.ArgumentParser(description='A network sniffer that identifies basic vulnerabilities')
 parser.add_argument('-i', dest='interface', help='Network interface to sniff on', default='eth0')
 parser.add_argument('-r', dest='pcapfile', help='A PCAP file to read')
